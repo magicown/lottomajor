@@ -1,0 +1,147 @@
+<?php
+	include "./header.html";
+?>
+<div id="page-wrapper">
+<?php include "./top_guide.html"; ?>
+	<div id="page-inner">
+    	<div class="top_search">보유금 충전 이력</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="card" style="box-shadow: none;">
+					<div class="col s12">
+						<div class="contents">
+							<div class="card search_box">
+								<form>
+									<div class="custom-control custom-select">
+										<span>상세검색</span>
+										<div class="select_100">
+											<p>레벨2</p>
+											<select class="form-control">
+											<option>전체</option>
+											<option>1</option>
+											<option>2</option>
+											</select>
+										</div>
+										<div class="select_100">
+											<p>레벨3</p>
+											<select class="form-control">
+											<option>전체</option>
+											<option>1</option>
+											<option>2</option>
+											</select>
+										</div>
+										<div class="select_100">
+											<p>레벨4</p>
+											<select class="form-control">
+											<option>전체</option>
+											<option>1</option>
+											<option>2</option>
+											</select>
+										</div>
+										<div class="select_100">
+											<p>레벨5</p>
+											<select class="form-control">
+											<option>전체</option>
+											<option>1</option>
+											<option>2</option>
+											</select>
+										</div>
+										<div class="select_100">
+											<p>레벨6</p>
+											<select class="form-control">
+											<option>전체</option>
+											<option>1</option>
+											<option>2</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom-control custom-search">
+										<input type="text" name="start_date" value="2019-08-28" style="width:100px; text-align: center;"> ~ <input type="text" name="start_date" value="2019-08-28" style="width: 100px;text-align: center;"><button class="btn btn-primary">검색</button>
+									</div>
+								</form>
+							</div>
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-hover">
+									<thead>
+									<tr>
+									<th>No</th>
+									<th>레벨1</th>
+									<th>레벨2</th>
+									<th>입금자</th>
+									<th>입금액</th>
+									<th>신청일</th>
+									<th>요청내용</th>
+									<th>취소사유</th>
+									<th>처리</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+									<td>1</td>
+									<td>A본사</td>
+									<td>B부본사</td>
+									<td>홍길동</td>
+									<td>100,000</td>
+									<td>2019-02-23</td>
+									<td></td>
+									<td></td>
+									<td>대기</td>
+									</tr>
+									<tr>
+									<td>1</td>
+									<td>A본사</td>
+									<td>B부본사</td>
+									<td>홍길동</td>
+									<td>100,000</td>
+									<td>2019-02-23</td>
+									<td></td>
+									<td></td>
+									<td>입금처리완료</td>
+									</tr>
+									</tbody>
+									<tfoot>
+									<tr style="background-color: #0a857e">
+									<th style="color:#fff;" colspan="4" class="center">합계</th>
+									<th style="color:#fff;" class="center">100,000</th>
+									<th style="color:#fff;" colspan="4"></th>
+									</tr>
+									</tfoot>
+								</table>
+							</div>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#recharge">상위노드로 보유금 충전 신청</button>
+						</div>
+					</div>
+					<div class="clearBoth"><br></div>
+				</div>
+			</div>
+<!-- 상위노드로 보유금 충전 신청 팝업 -->
+<div class="modal modal-center fade" id="recharge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">상위 노드로 보유금 충전 처리 요청</h4>
+      </div>
+      <div class="modal-body">
+		<table>
+			<tr>
+				<th>충전액</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>입금자</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>내용</th>
+				<td><textarea class="form-control col-sm-5" rows="5"></textarea></td>
+			</tr>
+		</table>      	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-default">입금처리</button>
+      </div>
+    </div>
+</div></div>				
+<?php include "footer.html"; ?>

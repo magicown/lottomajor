@@ -1,0 +1,1194 @@
+/*----------------------------------------------
+Author : www.webthemez.com
+License: Commons Attribution 3.0
+http://creativecommons.org/licenses/by/3.0/
+------------------------------------------------*/
+
+
+/*----------------------------------------------
+    COMMON  STYLES    
+------------------------------------------------*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #1F2837;
+}
+.container {
+    width: 1120px;
+    max-width: none !important;
+}
+ #wrapper {
+    width: 100%;
+}
+
+#page-wrapper {
+    padding: 15px 15px;
+    min-height: 600px;
+    background: #ececec;
+}
+#page-inner {
+    width:100%;
+    margin:10px 20px 10px 0px;
+    padding: 15px 30px;
+    min-height:1200px;
+}
+.header .container-fluid{
+padding:0;
+}
+.text-center {
+    text-align:center;
+}
+.no-boder {
+    border:1px solid #f3f3f3;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+margin-top: 7px;
+margin-bottom: -5px;
+}
+h2 {
+    color: #000;
+}
+h4 {
+    padding-top:10px;
+}
+.square-btn-adjust {
+    border: 0px solid transparent; 
+   -webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+
+}
+p {
+    font-size: 14px;
+    line-height:25px;
+    /* padding-top:20px; */
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.alert { 
+    border-radius: 0px;
+}
+.navbar-side {
+    z-index: 0; 
+}
+.panel{
+border-radius:0px;
+}
+.navbar-side .nav > li > a > i{color: rgba(255, 255, 255, 0.62);padding: 8px;width: 20px;text-align: center;font-size: 14px;}
+.top-navbar{position: fixed;width: 100%;z-index: 300;-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);}
+.navbar-side {
+  z-index: 2;
+  position: fixed;
+  width: 260px;
+  top: 70px;
+  box-shadow: none;
+}
+#page-wrapper {
+  position: relative;
+  top: 70px;
+  /* box-shadow: 0 0 10px #757575; */
+  -moz-box-shadow: 0 0 10px #757575;
+  /* -webkit-box-shadow: 0 0 10px #757575; */
+}
+.top-navbar .nav > li > a:hover, .top-navbar .nav > li > a:focus {text-decoration: none;background-color: #e0e8f5;color: #fff;}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+background-color: #075CB3;
+border-color: #075CB3;
+}
+.breadcrumb {padding: 10px 10px 10px 20px;margin-bottom: 0;list-style: none;border-radius: 0;/* -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05); *//* box-shadow: 0 1px 1px rgba(0,0,0,.05); */background: transparent;line-height: 20px;font-size: 13px;margin-left: 14px;}
+.dropdown-menu>li>a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  font-size: 13px;
+}
+.dropdown-menu>li>a i {
+  color: #1F1F1F;
+}
+.text-muted {
+  color: #213452;
+}
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  /* padding: 4px 7px; */
+  font-size: 11px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #F09B22;
+  border-radius: 10px;
+}
+.closed{
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);	
+}
+.closed i{color: #adadad;}
+/*----------------------------------------------
+   DASHBOARD STYLES    
+------------------------------------------------*/
+.page-header {padding-bottom: 0;margin: 0;border-bottom: 1px solid transparent;text-align: left;background-color: transparent;padding: 32px 22px 10px 28px;color: #323232;}
+.panel-left{  
+width: 100px;
+height: 100px;background: #0866C6;/* border: 2px solid #4590DA; */
+/* border-radius: 100%; */
+overflow: hidden;
+
+margin: 12px;}
+.panel-left .fa-5x {
+font-size: 3em;color: rgb(240, 155, 34);
+padding: 29px 0;
+margin-bottom:30px;}
+.panel-right{  
+height: 124px;
+background: transparent;
+margin-bottom: 0;color: #AFAFAF;
+
+float: left;text-align: left;padding-left: 20px;font-size: 16px;text-shadow: none;font-weight: normal;text-align: center;}
+.panel-right h3{  
+font-size: 40px;
+padding: 18px 10px 13px 0;color: #5D5D5D;}
+.panel-right strong{
+	font-weight:normal;
+	color: #737373;
+}
+.panel-back {
+    background-color:#fff;
+
+}
+.panel-default {
+  border-color: #ECECEC;
+}
+.panel-default > .panel-heading {color: #555;
+border-color: #FFF;
+font-weight:bold;background: #FFFFFF;
+font-size: 16px;
+text-shadow: none;}
+.panel-heading {
+  /* padding: 15px 15px 0px; */
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.jumbotron{
+padding:20px;
+}
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.jumbotron, .well{
+background:#fff;
+}
+   .noti-box {
+min-height: 100px;
+padding: 20px;
+}
+
+    .noti-box .icon-box {
+display: block;
+float: left;
+margin: 0 15px 10px 0;
+width: 70px;
+height: 70px;
+line-height: 75px;
+vertical-align: middle;
+text-align: center;
+font-size: 40px;
+}
+.text-box p{
+    margin: 0 0 3px;
+}
+.main-text {
+    font-size: 25px;
+    font-weight:600;
+}
+.set-icon {
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+
+}
+.panel-primary{
+display:inline-block;
+margin-bottom: 30px;
+width:100%;
+}
+.green {
+/* background-color: #1CC09F; */
+color: #fff;
+}
+ .blue {background-color: #FFFFFF;color: #002A4C;}
+  .red {
+background-color: #FB6E51;
+color:#fff;
+}
+  .brown {
+background-color: #F5B252;
+color:#fff;
+} 
+ .back-footer-red {
+background-color: #F0433D;
+color:#fff;
+border-top: 0px solid #fff;
+}
+ 
+ .icon-box-right {
+display: block;
+float: right;
+margin: 0 15px 10px 0;
+width: 70px;
+height: 70px;
+line-height: 75px;
+vertical-align: middle;
+text-align: center;
+font-size: 40px;
+}
+
+ .main-temp-back {
+background: #8702A8;
+color: #FFFFFF;
+font-size: 16px;
+font-weight: 300;
+text-align: center;
+}
+ .main-temp-back .text-temp {
+font-size: 40px;
+}
+.back-dash {
+    padding:20px;
+    font-size:20px;
+    font-weight:500;
+  -webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+background-color:#2EA7EB;
+color:#fff;
+}
+    .back-dash p {
+        padding-top:16px;
+        font-size:13px;
+        color:#fff;
+        line-height:25px;
+        text-align:justify;
+    }
+
+     .color-bottom-txt {
+   color: #000;
+font-size: 16px;
+line-height: 30px;
+}
+     /*CHAT PANEL*/
+/*Charts*/
+
+.main-chart {
+	background: #fff;
+}
+
+.easypiechart-panel {
+	text-align: center;
+	padding: 1px 0;
+	margin-bottom: 20px;
+}
+
+.placeholder h2 {
+	margin-bottom: 0px;
+}
+
+.donut {
+	width: 100%;
+}
+
+.easypiechart {
+	position: relative;
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	margin: 20px auto 10px auto;
+}
+
+.easypiechart .percent {
+	display: block;
+	position: absolute;
+	font-size: 26px;
+	top: 38px;
+	width: 120px;
+}
+
+#easypiechart-blue .percent { color: #30a5ff;}
+#easypiechart-teal .percent { color: #1ebfae;}
+#easypiechart-orange .percent { color: #ffb53e;}
+#easypiechart-red .percent { color: #ef4040;}
+
+	 
+ .chat-panel .panel-body {
+height: 450px;
+overflow-y: scroll;
+}
+ .chat-box {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+ .chat-box li {
+margin-bottom: 15px;
+padding-bottom: 5px;
+border-bottom: 1px dotted #808080;
+}
+ .chat-box li.left .chat-body {
+margin-left: 90px;
+}
+ .chat-box li .chat-body p {
+margin: 0;
+color: #8d8888;
+}
+.chat-img>img {
+    margin-left:20px;
+}
+footer p{
+font-size: 14px;
+}
+/*----------------------------------------------
+    MENU STYLES    
+------------------------------------------------*/
+div#sideNav:hover {
+    color: #1f2837;
+}
+.user-image {
+    margin: 25px auto;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+max-height:170px;
+max-width:170px;
+}
+.top-navbar{
+margin:0px;
+}
+.top-navbar .navbar-brand {color: #fff;width: 260px;text-align: left;height: 60px;font-size: 24px;font-weight: 700;/* text-transform: uppercase; */line-height: 30px;background: #f44336;}
+.navbar-brand b{
+color: #4BD28C;
+}
+.top-navbar .nav > li {
+position: relative;
+display: inline-block;
+margin: 0px;
+padding: 0px;
+}
+.top-navbar .nav > li > a {position: relative;display: block;padding: 17px;color: #484848;margin: 0px;}
+.top-navbar .nav > li > a:hover, .top-navbar .nav > li > a:focus {text-decoration: none;color: #f44336 !important;background: transparent;}
+.top-navbar .dropdown-menu{
+min-width: 230px;
+border-radius: 0 0 4px 4px;
+border: 0;}
+.top-navbar .dropdown-menu > li > a:hover, .top-navbar .dropdown-menu > li > a:focus{
+color: #225081;
+background:none;
+}
+.dropdown-tasks{
+width: 255px;
+}
+.dropdown-tasks .progress {
+height: 8px;
+margin-bottom: 8px;
+overflow: hidden;
+background-color: #f5f5f5;
+border-radius: 0px;
+}
+.dropdown-tasks > li > a {padding: 5px 14px;}
+.dropdown-tasks p {
+font-size: 13px;
+line-height: 21px;
+padding-top: 4px;
+}
+.active-menu, .active-menu i {
+    background-color: #233342 !important;
+    color: #fff !important;
+}
+.active-menu i{color: #f44336 !important;}
+.arrow {
+    float: right;
+    margin-top: 8px;
+}
+
+.fa.arrow:before {
+    content: "\f104";
+}
+
+.active > a > .fa.arrow:before {
+    content: "\f107";
+}
+
+
+.nav-second-level li,
+.nav-third-level li {
+    border-bottom: none !important;
+}
+
+.nav-second-level li a {
+    padding-left: 37px;
+}
+
+.nav-third-level li a {
+    padding-left: 55px;
+}
+.sidebar-collapse , .sidebar-collapse .nav{
+	background:none;
+}
+.sidebar-collapse .nav {
+	padding:0;
+}
+.sidebar-collapse .nav > li > a {
+	color: rgba(255, 255, 255, 0.39);
+	background:transparent;
+	text-shadow:none;
+}
+.sidebar-collapse > .nav > li > a {
+	padding: 8px;
+	font-size: 14px;
+}
+.sidebar-collapse > .nav > li {
+	border-bottom: 1px solid rgba(107, 108, 109, 0.08);
+}
+ul.nav.nav-second-level.collapse.in {background: #121821;}
+.sidebar-collapse .nav > li > a:hover,
+.sidebar-collapse .nav > li > a:focus {
+	 
+	outline:0;
+}
+ 
+.navbar-side {
+	border:none;
+	background: #1F2837;
+}
+.top-navbar {
+	background: #ffffff;
+	border-bottom:none;
+}
+.top-navbar .nav > li > a > i {margin-right: 0;}
+.top-navbar .navbar-brand:hover {color: #FFFFFF;background-color: #f44336;}
+.dropdown-user li {
+margin: 8px 0;
+}
+.navbar-default {border: 0px solid #1f2837;}
+.navbar-header {
+    background: transparent;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #f44336;}
+.navbar-default .navbar-toggle {border-color: #ffffff;}
+
+.navbar-default .navbar-toggle .icon-bar {background-color: #ffffff;}
+.nav > li > a > i {
+    margin-right:10px;
+    color: #1f2837;
+    font-size: 16px;
+}
+.dropdown-menu>li>a>strong {
+  color: #0866C6;
+  padding: 5px 0;
+  display: inline-block;
+  font-weight: 500;
+}
+#sideNav{
+    float: left;
+    left: 0;
+    z-index: 3;
+    color: #f44336;
+    cursor:pointer;
+    border-radius: 0;
+    width: 14px;
+    font-size: 44px;
+    line-height: 33px;
+    margin: 7px 0 0 13px;
+    background: #ffffff;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    padding-top: 5px;
+    margin-top: 14px;
+    border-radius: 50%;
+}
+ul.dropdown-menu.dropdown-messages li a div {
+  padding: 2px 0;
+}
+#page-wrapper{
+	background: #e0e8f5;
+}
+.dashboard-cards .card-stacked{
+	color:#fff;
+	border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+.dashboard-cards .card-content{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.dashboard-cards .card-action strong{
+	font-weight:700;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.65);
+}
+.donutpad {
+    padding: 32px 0;
+}
+.cirStats h4{
+	text-transform:uppercase;
+}
+.card-action b{
+	text-transform:uppercase;
+}
+.collection .collection-item{
+	
+padding: 16px 20px;
+}
+/*----------------------------------------------
+    UI ELEMENTS STYLES     
+------------------------------------------------*/
+.btn-circle {
+width: 50px;
+height: 50px;
+padding: 6px 0;
+ -webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+text-align: center;
+font-size: 12px;
+line-height: 1.428571429;
+}
+
+/*----------------------------------------------
+    MEDIA QUERIES     
+------------------------------------------------*/
+
+ @media(min-width:768px) {
+     #page-wrapper-header{
+         margin: 0 0 0 260px;
+         padding: 0;
+         min-height: 0px;
+     }
+     #page-wrapper{
+               margin: 0 0 0 260px;
+               padding: 0;
+               min-height: 1200px;
+    }
+
+
+	
+	
+    .navbar-side {
+        width: 260px;
+        z-index: 1;
+    }
+
+   .navbar {
+ border-radius: 0px; 
+}
+   
+}
+ @media(max-width:768px) {
+	#sideNav{
+	display:none;
+} 
+ #page-wrapper {
+position: relative;
+top: 59px;
+ }
+ }
+ @media(max-width:480px) {
+ #page-wrapper {
+position: relative;
+top: 93px;
+ }
+.page-header small {
+display: block;
+padding-top: 14px;
+font-size: 19px;
+}
+#sideNav{
+	display:none;
+}
+.panel-left {
+  width: 85px;
+  height: 85px; 
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 14px;
+}
+}
+.dropdown-content{
+    min-width: 165px !important;
+    left: -38px !important;
+    top: 60px !important;
+}
+.w250{
+	    min-width: 255px !important;
+	    left: -184px !important;
+}
+.top-navbar .nav > li > a b{
+	margin:0 5px;
+}
+.dropdown-content li>a{
+	font-size:14px;
+	text-decoration:none;
+	color: #233342;
+}
+.dropdown-content li>a i{
+	font-size:16px;
+}
+.dropdown-content li>a{
+	font-size: 12px;
+	/* margin: 0 4px; */
+	padding: 0;
+}
+.card.horizontal.cardIcon .card-image {
+    background: #30cc7b;
+    color: #fff !important;
+    font-size: 10px;
+    width: 94px;
+    text-align: center;
+    vertical-align: middle;
+}
+.card.horizontal.cardIcon .card-image i {
+    margin-top: 45%;
+    font-size: 55px;
+    opacity: .4;
+}
+.navbar-brand i.large.material-icons {
+    float: left;
+    font-size: 31px;
+    margin-right: 6px;
+}
+.clearBoth{
+	 clear:both;
+}
+.icon-preview {
+    font-size: 13px !important;
+    padding: 15px !important;
+    display: inline-block;
+    line-height: 20px !important;
+}
+.icon-preview span {
+    display: inherit;
+}
+.header .breadcrumb:before{
+	    font-size: 14px;
+	    margin-right: 0px;
+	    color: #717171;
+	    display: none;
+}
+.header .breadcrumb li a{
+	font-size: 13px;
+	font-size: 13px;
+	text-decoration: none;
+	color: #717171;
+	text-decoration: none;
+	color: #f44336;
+}
+.dropdown-content li{
+	
+padding: 15px;
+	
+color: #233342;
+	
+font-size: 13px;
+}
+.taskList li{padding: 20px 15px 5px;background: #fff;font-size: 12px;}
+.taskList > div{
+padding: 0 15px 0px 15px;
+}
+.taskList p{
+}
+.taskList .dropdown-content li>a {
+    font-size: 12px;
+    padding:0px;
+}
+.taskList li:last-child {
+    padding-top: 5px;
+    color: #f44336;
+}
+ @media(max-width:768px) {
+	  
+	 .navbar-header {
+		background: #f44336;
+	}
+	.navbar-side {
+		z-index: 2;
+		position: fixed;
+		width: 260px;
+		top: 69px;
+		box-shadow: none;
+	}
+ }
+  @media(max-width:520px) {
+	  ul#dropdown1 {
+			left: 0px !important;
+		}
+	 ul#dropdown2 {
+			left: -69px !important;
+		}
+		.top-navbar .nav > li > a{
+			padding:17px 12px;
+		}
+ }
+   @media(max-width:320px) {
+	  ul#dropdown1 {
+			left: 0px !important;
+		}
+	 ul#dropdown2 {
+			left: -69px !important;
+		}
+		.top-navbar .nav > li > a{
+			padding:17px 9px;
+		}
+ }
+
+
+/*새로 추가한 css */
+.contents{overflow: hidden;padding:20px;}
+.tab-content{padding:20px 0;overflow: hidden;}
+.row .tab-content .col{padding:0;}
+.top_search{width: 100%;background: #f9f9f9;text-align: center;padding: 15px;font-size: 18px;border-radius: 0 0 2px 2px;position: relative;}
+.top_search > .custom-search{position: absolute;float: right;right: 0;top: 0;font-size: 14px;margin: 5px;}
+.menu-top-menu-bar {color:#fff; height:65px; width:100%; position: fixed; top:60px;z-index:200;background:#1f2837;box-sizing:border-box;padding: 15px 0;}
+.menu-top-menu-bar ul { list-style: none; display: flex; justify-content: flex-start;width:70%;float:left;}
+.menu-top-menu-bar > div {width:30%;float:right;line-height:36px;text-align: right;}
+.menu-top-menu-bar > div > span {padding-right:20px;}
+.menu-top-menu-bar ul li.main-menu { width: 120px; }
+.margin-left-100 { margin-left:100px;}
+.width-100 { width:110px;}
+.card .row.card_row_title .col-md-2{width:18.33333333%;;padding-right: 0;}
+.card .row.card_row_title .col-md-10{width:81.66666667%;;}
+.card .row.card_row_title .card-content {padding-left: 0;padding-right: 0;}
+.card .row.card_row_title .card-content > div {margin: 0.7rem 0 1rem 0;font-size: 20px;line-height: 20px;margin-bottom: 20px;overflow: hidden;}
+.card .card-action .col-md-1{padding:0;}
+.card .card-action .col-md-1 > div > div{padding:0;}
+
+.table>tbody>tr>td, .table>tbody>tr>th{vertical-align: middle;}
+table, th, td{text-align: center;}
+.table>thead>tr>th{vertical-align: middle; }
+.col.s12.node_list_basic_info{width:100%;padding:20px;box-sizing:border-box;}
+.col.s12.node_list_basic_info > div > div{border:#ddd 1px solid;min-height: 850px;width: 48%;margin-left:1%;padding:20px;float:left;}
+.col.s12.node_list_basic_info > div > div:first-child{margin-right:1%;}
+.col.s12.node_list_basic_info > div > div > table{margin-bottom: 50px;overflow: hidden;}
+.col.s12.node_list_basic_info > div > div > table > tbody > tr > th{width:35%;text-align:right;padding: 15px 15px 15px 0;}
+.col.s12.node_list_basic_info > div > div > table > tbody > tr > th.service_title{vertical-align: top;padding-top: 0}
+.col.s12.node_list_basic_info > div > div > table > tbody > tr > td{width:60%;text-align:left;margin: 5px;line-height: 20px;min-height: 32px;}
+.col.s12.node_list_basic_info > div > div > table > tbody > tr > td > span{line-height: 35px;}
+.col.s12.node_list_basic_info > div > div > table > tbody > tr > td > input{margin-bottom: 0;}
+.col.s12.node_list_basic_info > div > div > table > tbody > tr > td > input.small{width: 45%;float: left;margin-right: 10px}
+.col.s12.node_list_basic_info > div > div > table > tbody > tr > td > div [type="checkbox"]+label{line-height: 20px;}
+.col.s12.node_list_basic_info > div.col-md-3{padding:0;}
+.col.s12.node_list_basic_info > div.col-md-9{padding:0;}
+.dash-table {border:#333 solid 1px; border-radius:5px; background-color:yellow; margin:0 1.3% 1.3% 0; width:32%;}
+.card .card-content p.p-warning{font-size:35px; margin:10px 0 30px 0 !important;height: 25px;}
+.card.search_box{width:100%;overflow:hidden;background: none;box-shadow: none;}
+.card.search_box > form{float:right;width: 100%;}
+.card.search_box > form > .custom-radio{float:left;margin-top:10px;}
+.card.search_box > form > .custom-search{float:right;}
+.card.search_box > form > .custom-radio [type="radio"]:not(:checked)+label, [type="radio"]:checked+label{padding-left: 25px;}
+.row .col.s13 {width: 19.98%;margin-left: auto;left: auto;right: auto}
+.col.tab_area{width:100%;}
+.col.tab_area_second{width:100%;padding:0;}
+.tabs .tab a{padding:0 20px;}
+#test3 .row{margin: 0}
+.table-statistics>tbody>tr:nth-of-type(odd){background:none;}
+.table-statistics>tbody>tr:hover{background-color:#f5f5f5}
+.table-striped>tbody>tr.sub_total{background:#f9f9f9 !important;}
+.table>thead>tr>th.title{background: #ddd;border: 1px solid #ccc;}
+.custom-select{float:left;}
+.custom-select span{padding-right: 15px;float: left;}
+.custom-select .select_100{width:100px;float: left;margin: -5px 5px 10px;}
+.custom-select .select_100 > p{text-align: center;}
+.custom-select.select_150{padding:4px 0;margin-right: 40px;}
+.custom-select.select_150 > span{line-height: 34px}
+.custom-select .select_150{width:150px;float: left;margin: 0px 5px 10px;}
+.card.search_box > form > .custom-radio [type="radio"]:not(:checked)+label, [type="radio"]:checked+label{padding-right: 10px;}
+.card.search_box > form > .custom-radio_left{width:100%;float:left;margin:0;}
+.card.realtime_box{padding:20px;min-height: 270px;}
+#easypiechart-blue1 .percent { color: #30a5ff;}
+#easypiechart-blue2 .percent { color: #30a5ff;}
+#easypiechart-blue3 .percent { color: #30a5ff;}
+#easypiechart-blue4 .percent { color: #30a5ff;}
+#easypiechart-blue5 .percent { color: #30a5ff;}
+#easypiechart-blue6 .percent { color: #30a5ff;}
+#easypiechart-blue7 .percent { color: #30a5ff;}
+#easypiechart-blue8 .percent { color: #30a5ff;}
+#easypiechart-blue9 .percent { color: #30a5ff;}
+#easypiechart-blue10 .percent { color: #30a5ff;}
+#easypiechart-blue11 .percent { color: #30a5ff;}
+#easypiechart-blue12 .percent { color: #30a5ff;}
+#easypiechart-blue13 .percent { color: #30a5ff;}
+
+nav ul li.active ul li.active {background-color: rgba(0,0,0,0.5);}
+nav ul li.active ul li.active a{color:#fff;}
+
+.service_chart{padding:50px 20px;overflow: hidden;}
+.modal .modal-body{overflow:hidden;}
+.modal table, .modal th, .modal td{text-align: left;}
+.modal th{height: 50px;width:100px;}
+.modal td input{margin-bottom: 5px;}
+#add_node .modal-body{padding:15px 0;}
+.modal .add_node_box{width:44%;margin: 0 3%;float:left;overflow: hidden;}
+.modal .add_node_box h6{width: 100%;padding:10px;text-align: center;font-size: 16px;background: #ddd}
+.modal .add_node_box table{margin-bottom: 30px;}
+.modal .col.s12.node_list_basic_info{padding:0;}
+.modal .col.s12.node_list_basic_info > div{border:none;padding:0;text-align: center;border:#ddd 1px solid;min-height: 850px;width: 48%;margin-left:1%;padding:20px;float:left;}
+.modal .col.s12.node_list_basic_info > div > h6{width: 100%;padding:10px;text-align: center;font-size: 16px;background: #ddd}
+.modal .col.s12.node_list_basic_info > div > table{margin-bottom: 50px;overflow: hidden;}
+.modal .col.s12.node_list_basic_info > div > table > tbody > tr > td > .toggle.btn{text-align: center;width: 66px !important;}
+.modal .col.s12.node_list_basic_info > div > table > tbody > tr > td > input.small{width: 45%;float: left;margin-right: 10px}
+@media (min-width: 768px){
+	#reserve_recovery .modal-dialog {
+	    width: 500px;
+	}
+	#deposit .modal-dialog {
+	    width: 500px;
+	}
+	#add_node .modal-dialog {
+	    width: 900px;
+	}
+}
+.modal .modal-body input.small{width:50%}	
+.modal .modal-footer .btn{margin: 6px 3px;}	
+
+/* color */
+a.node1{color:#d72d2d;}
+a.node2{color:#d7812d;}
+a.node3{color:#d7c52d;}
+a.node4{color:#62b412;}
+a.node5{color:#14a46f;}
+a.node6{color:#1469a4;}
+a.node7{color:#1417a4;}
+a.node8{color:#8014a4;}
+a.node9{color:#cf3b9d;}
+a.node10{color:#ed80a7;}
+
+
+.flag-icon{position: relative;line-height: 21px;overflow: hidden;height: 21px;margin-right: 5px;vertical-align: middle;}
+.flag-icon .ad, .flag-icon .flag-icon .ae, .flag-icon .af, .flag-icon .ag, .flag-icon .ai, .flag-icon .al, .flag-icon .am, .flag-icon .an, .flag-icon .ao, .flag-icon .aq, .flag-icon .ar, .flag-icon .as, .flag-icon .at, .flag-icon .au, .flag-icon .aw, .flag-icon .ax, .flag-icon .az, .flag-icon .ba, .flag-icon .bb, .flag-icon .bd, .flag-icon .be, .flag-icon .bf, .flag-icon .bg, .flag-icon .bh, .flag-icon .bi, .flag-icon .bj, .flag-icon .bm, .flag-icon .bn, .flag-icon .bo, .flag-icon .bq, .flag-icon .br, .flag-icon .bs, .flag-icon .bt, .flag-icon .bv, .flag-icon .bw, .flag-icon .by, .flag-icon .bz, .flag-icon .ca, .flag-icon .cc, .flag-icon .cd, .flag-icon .cf, .flag-icon .cg, .flag-icon .ci, .flag-icon .ck, .flag-icon .cl, .flag-icon .cm, .flag-icon .cn, .flag-icon .co, .flag-icon .cr, .flag-icon .cu, .flag-icon .cv, .flag-icon .cw, .flag-icon .cx, .flag-icon .cy, .flag-icon .cz, .flag-icon .de, .flag-icon .dj, .flag-icon .dk, .flag-icon .dm, .flag-icon .do, .flag-icon .dz, .flag-icon .ec, .flag-icon .ee, .flag-icon .eg, .flag-icon .en, .flag-icon .er, .flag-icon .es, .flag-icon .et, .flag-icon .fi, .flag-icon .fj, .flag-icon .fk, .flag-icon .fm, .flag-icon .fo, .flag-icon .ga, .flag-icon .gb, .flag-icon .gd, .flag-icon .ge, .flag-icon .gh, .flag-icon .gi, .flag-icon .gm, .flag-icon .gn, .flag-icon .gp, .flag-icon .gq, .flag-icon .gr, .flag-icon .gs, .flag-icon .gt, .flag-icon .gu, .flag-icon .gw, .flag-icon .gy, .flag-icon .hk, .flag-icon .hm, .flag-icon .hn, .flag-icon .hr, .flag-icon .ht, .flag-icon .hu, .flag-icon .honduras, .flag-icon .ie, .flag-icon .il, .flag-icon .im, .flag-icon .in, .flag-icon .io, .flag-icon .iq, .flag-icon .ir, .flag-icon .is, .flag-icon .it, .flag-icon .je, .flag-icon .jm, .flag-icon .jo, .flag-icon .jp, .flag-icon .ke, .flag-icon .kg, .flag-icon .kh, .flag-icon .ki, .flag-icon .km, .flag-icon .kn, .flag-icon .kp, .flag-icon .ks, .flag-icon .kw, .flag-icon .ky, .flag-icon .kz, .flag-icon .la, .flag-icon .lb, .flag-icon .lc, .flag-icon .li, .flag-icon .lk, .flag-icon .lr, .flag-icon .ls, .flag-icon .lt, .flag-icon .lu, .flag-icon .lv, .flag-icon .ly, .flag-icon .ma, .flag-icon .md, .flag-icon .me, .flag-icon .mg, .flag-icon .mh, .flag-icon .mk, .flag-icon .ml, .flag-icon .mm, .flag-icon .mn, .flag-icon .mo, .flag-icon .mp, .flag-icon .mr, .flag-icon .ms, .flag-icon .mt, .flag-icon .mu, .flag-icon .mv, .flag-icon .mw, .flag-icon .mx, .flag-icon .my, .flag-icon .mz, .flag-icon .na, .flag-icon .nc, .flag-icon .ne, .flag-icon .nf, .flag-icon .ng, .flag-icon .ni, .flag-icon .nl, .flag-icon .no, .flag-icon .nr, .flag-icon .nu, .flag-icon .nz, .flag-icon .om, .flag-icon .pa, .flag-icon .pe, .flag-icon .pf, .flag-icon .pg, .flag-icon .ph, .flag-icon .pk, .flag-icon .pl, .flag-icon .pm, .flag-icon .pn, .flag-icon .pr, .flag-icon .ps, .flag-icon .pt, .flag-icon .pw, .flag-icon .py, .flag-icon .qa, .flag-icon .ro, .flag-icon .rs, .flag-icon .ru, .flag-icon .rw, .flag-icon .sa, .flag-icon .sb, .flag-icon .sc, .flag-icon .sd, .flag-icon .se, .flag-icon .sh, .flag-icon .si, .flag-icon .sj, .flag-icon .sk, .flag-icon .sl, .flag-icon .sn, .flag-icon .so, .flag-icon .sr, .flag-icon .ss, .flag-icon .st, .flag-icon .sv, .flag-icon .sy, .flag-icon .sz, .flag-icon .tc, .flag-icon .td, .flag-icon .tf, .flag-icon .tg, .flag-icon .th, .flag-icon .tj, .flag-icon .tk, .flag-icon .tl, .flag-icon .tm, .flag-icon .tn, .flag-icon .to, .flag-icon .tr, .flag-icon .tt, .flag-icon .tv, .flag-icon .tz, .flag-icon .ua, .flag-icon .ug, .flag-icon .um, .flag-icon .us, .flag-icon .uy, .flag-icon .uz, .flag-icon .vc, .flag-icon .ve, .flag-icon .vg, .flag-icon .vi, .flag-icon .vn, .flag-icon .vu, .flag-icon .ws, .flag-icon .ye, .flag-icon .za, .flag-icon .zm, .flag-icon .zw, .flag-icon .zz, .flag-icon .bundesliga, .flag-icon .bundesliga-de, .flag-icon .champions-league, .flag-icon .champions-league-zz, .flag-icon .epl, .flag-icon .europa-league-zz, .flag-icon .kbo, .flag-icon .korea-professional-baseball---first-runs-zz, .flag-icon .korea-professional-baseball-kr, .flag-icon .korea-republic---k-league-classic-kr, .flag-icon .la-liga, .flag-icon .la-liga-es, .flag-icon .ligue-1, .flag-icon .ligue-1-fr, .flag-icon .mlb, .flag-icon .mlb---hits---runs---errors-us, .flag-icon .mlb---to-score-first-us, .flag-icon .mlb-us, .flag-icon .nba-us, .flag-icon .nba-summer-league-zz, .flag-icon .nba, .flag-icon .nhl, .flag-icon .nippon-professional-baseball-jp, .flag-icon .npb, .flag-icon .npb---hits---runs---errors-us, .flag-icon .npb---hits---runs---errors-zz, .flag-icon .npb---to-score-first-us, .flag-icon .npb---to-score-first-zz, .flag-icon .serie-a, .flag-icon .serie-a-it, .flag-icon .uefa---champions-league-zz, .flag-icon .uefa---europa-league-zz, .flag-icon .bl, .flag-icon .fr, .flag-icon .gf, .flag-icon .gg, .flag-icon .gl, .flag-icon .id, .flag-icon .kr, .flag-icon .mc, .flag-icon .mf, .flag-icon .mq, .flag-icon .re, .flag-icon .sg, .flag-icon .sx, .flag-icon .tw, .flag-icon .wf, .flag-icon .xk, .flag-icon .yt, .flag-icon .ch, .flag-icon .sm, .flag-icon .np, .flag-icon .va, .flag-icon .fifa---world-cup-zz, .flag-icon .england-championship-league, .flag-icon .sf, .flag-icon .england-premiere-league, .flag-icon .wales-league, .flag-icon .europa_league_zz, .flag-icon .uefa_-_europa_league_zz, .flag-icon .asian-games, .flag-icon .libertadores-cup, .flag-icon .uefa-nations-league, .flag-icon .uefa-u21, .flag-icon .hits---runs---errors-us, .flag-icon .kovo-cup-volleyball, .flag-icon .nhl-hockey, .flag-icon .afc-champions-league, .flag-icon .uefa-youth-league, .flag-icon .afccup, .flag-icon .eredivise, .flag-icon .jleague, .flag-icon .korea-basketball-league, .flag-icon .korea-volley-ball, .flag-icon .wkbl, .flag-icon .ufc {
+display: inline-block;
+background: url('../img/flag-sprite.png') no-repeat;
+overflow: hidden;
+text-indent: -9999px;
+text-align: left;
+width: 24px;
+height: 15px;
+}
+
+.flag-icon .ad {background-position: 0px -0px;}
+.flag-icon .ae {background-position: 0px -15px;}
+.flag-icon .af {background-position: 0px -30px;}
+.flag-icon .ag {background-position: 0px -45px;}
+.flag-icon .ai {background-position: 0px -60px;}
+.flag-icon .al {background-position: 0px -75px;}
+.flag-icon .am {background-position: 0px -90px;}
+.flag-icon .an {background-position: 0px -105px;}
+.flag-icon .ao {background-position: 0px -120px;}
+.flag-icon .aq {background-position: 0px -135px;}
+.flag-icon .ar {background-position: 0px -150px;}
+.flag-icon .as {background-position: 0px -165px;}
+.flag-icon .at {background-position: 0px -180px;}
+.flag-icon .au {background-position: 0px -195px;}
+.flag-icon .aw {background-position: 0px -210px;}
+.flag-icon .ax {background-position: 0px -225px;}
+.flag-icon .az {background-position: 0px -240px;}
+.flag-icon .ba {background-position: 0px -255px;}
+.flag-icon .bb {background-position: 0px -270px;}
+.flag-icon .bd {background-position: 0px -285px;}
+.flag-icon .be {background-position: 0px -300px;}
+.flag-icon .bf {background-position: 0px -315px;}
+.flag-icon .bg {background-position: 0px -330px;}
+.flag-icon .bh {background-position: 0px -345px;}
+.flag-icon .bi {background-position: 0px -360px;}
+.flag-icon .bj {background-position: 0px -375px;}
+.flag-icon .bm {background-position: 0px -390px;}
+.flag-icon .bn {background-position: 0px -405px;}
+.flag-icon .bo {background-position: 0px -420px;}
+.flag-icon .bq {background-position: 0px -435px;}
+.flag-icon .br {background-position: 0px -450px;}
+.flag-icon .bs {background-position: 0px -465px;}
+.flag-icon .bt {background-position: 0px -480px;}
+.flag-icon .bv {background-position: 0px -495px;}
+.flag-icon .bw {background-position: 0px -510px;}
+.flag-icon .by {background-position: 0px -525px;}
+.flag-icon .bz {background-position: 0px -540px;}
+.flag-icon .ca {background-position: 0px -555px;}
+.flag-icon .cc {background-position: 0px -570px;}
+.flag-icon .cd {background-position: 0px -585px;}
+.flag-icon .cf {background-position: 0px -600px;}
+.flag-icon .cg {background-position: 0px -615px;}
+.flag-icon .ci {background-position: 0px -630px;}
+.flag-icon .ck {background-position: 0px -645px;}
+.flag-icon .cl {background-position: 0px -660px;}
+.flag-icon .cm {background-position: 0px -675px;}
+.flag-icon .cn {background-position: 0px -690px;}
+.flag-icon .co {background-position: 0px -705px;}
+.flag-icon .cr {background-position: 0px -720px;}
+.flag-icon .cu {background-position: 0px -735px;}
+.flag-icon .cv {background-position: 0px -750px;}
+.flag-icon .cw {background-position: 0px -765px;}
+.flag-icon .cx {background-position: 0px -780px;}
+.flag-icon .cy {background-position: 0px -795px;}
+.flag-icon .cz {background-position: 0px -810px;}
+.flag-icon .de {background-position: 0px -825px;}
+.flag-icon .dj {background-position: 0px -840px;}
+.flag-icon .dk {background-position: 0px -855px;}
+.flag-icon .dm {background-position: 0px -870px;}
+.flag-icon .do {background-position: 0px -885px;}
+.flag-icon .dz {background-position: 0px -900px;}
+.flag-icon .ec {background-position: 0px -915px;}
+.flag-icon .ee {background-position: 0px -930px;}
+.flag-icon .eg {background-position: 0px -945px;}
+.flag-icon .en {background-position: 0px -960px;}
+.flag-icon .er {background-position: 0px -975px;}
+.flag-icon .es {background-position: 0px -990px;}
+.flag-icon .et {background-position: 0px -1005px;}
+.flag-icon .fi {background-position: 0px -1020px;}
+.flag-icon .fj {background-position: 0px -1035px;}
+.flag-icon .fk {background-position: 0px -1050px;}
+.flag-icon .fm {background-position: 0px -1065px;}
+.flag-icon .fo {background-position: 0px -1080px;}
+.flag-icon .ga {background-position: 0px -1095px;}
+.flag-icon .gb {background-position: 0px -1110px;}
+.flag-icon .gd {background-position: 0px -1125px;}
+.flag-icon .ge {background-position: 0px -1140px;}
+.flag-icon .gh {background-position: 0px -1155px;}
+.flag-icon .gi {background-position: 0px -1170px;}
+.flag-icon .gm {background-position: 0px -1185px;}
+.flag-icon .gn {background-position: 0px -1200px;}
+.flag-icon .gp {background-position: 0px -1215px;}
+.flag-icon .gq {background-position: 0px -1230px;}
+.flag-icon .gr {background-position: 0px -1245px;}
+.flag-icon .gs {background-position: 0px -1260px;}
+.flag-icon .gt {background-position: 0px -1275px;}
+.flag-icon .gu {background-position: 0px -1290px;}
+.flag-icon .gw {background-position: 0px -1305px;}
+.flag-icon .gy {background-position: 0px -1320px;}
+.flag-icon .hk {background-position: 0px -1335px;}
+.flag-icon .hm {background-position: 0px -1350px;}
+.flag-icon .hn {background-position: 0px -1365px;}
+.flag-icon .hr {background-position: 0px -1380px;}
+.flag-icon .ht {background-position: 0px -1395px;}
+.flag-icon .hu {background-position: 0px -1410px;}
+.flag-icon .honduras {background-position: 0px -1425px;}
+.flag-icon .ie {background-position: 0px -1440px;}
+.flag-icon .il {background-position: 0px -1455px;}
+.flag-icon .im {background-position: 0px -1470px;}
+.flag-icon .in {background-position: 0px -1485px;}
+.flag-icon .io {background-position: 0px -1500px;}
+.flag-icon .iq {background-position: 0px -1515px;}
+.flag-icon .ir {background-position: 0px -1530px;}
+.flag-icon .is {background-position: 0px -1545px;}
+.flag-icon .it {background-position: 0px -1560px;}
+.flag-icon .je {background-position: 0px -1575px;}
+.flag-icon .jm {background-position: 0px -1590px;}
+.flag-icon .jo {background-position: 0px -1605px;}
+.flag-icon .jp {background-position: 0px -1620px;}
+.flag-icon .ke {background-position: 0px -1635px;}
+.flag-icon .kg {background-position: 0px -1650px;}
+.flag-icon .kh {background-position: 0px -1665px;}
+.flag-icon .ki {background-position: 0px -1680px;}
+.flag-icon .km {background-position: 0px -1695px;}
+.flag-icon .kn {background-position: 0px -1710px;}
+.flag-icon .kp {background-position: 0px -1725px;}
+.flag-icon .ks {background-position: 0px -1740px;}
+.flag-icon .kw {background-position: 0px -1755px;}
+.flag-icon .ky {background-position: 0px -1770px;}
+.flag-icon .kz {background-position: 0px -1785px;}
+.flag-icon .la {background-position: 0px -1800px;}
+.flag-icon .lb {background-position: 0px -1815px;}
+.flag-icon .lc {background-position: 0px -1830px;}
+.flag-icon .li {background-position: 0px -1845px;}
+.flag-icon .lk {background-position: 0px -1860px;}
+.flag-icon .lr {background-position: 0px -1875px;}
+.flag-icon .ls {background-position: 0px -1890px;}
+.flag-icon .lt {background-position: 0px -1905px;}
+.flag-icon .lu {background-position: 0px -1920px;}
+.flag-icon .lv {background-position: 0px -1935px;}
+.flag-icon .ly {background-position: 0px -1950px;}
+.flag-icon .ma {background-position: 0px -1965px;}
+.flag-icon .md {background-position: 0px -1980px;}
+.flag-icon .me {background-position: 0px -1995px;}
+.flag-icon .mg {background-position: 0px -2010px;}
+.flag-icon .mh {background-position: 0px -2025px;}
+.flag-icon .mk {background-position: 0px -2040px;}
+.flag-icon .ml {background-position: 0px -2055px;}
+.flag-icon .mm {background-position: 0px -2070px;}
+.flag-icon .mn {background-position: 0px -2085px;}
+.flag-icon .mo {background-position: 0px -2100px;}
+.flag-icon .mp {background-position: 0px -2115px;}
+.flag-icon .mr {background-position: 0px -2130px;}
+.flag-icon .ms {background-position: 0px -2145px;}
+.flag-icon .mt {background-position: 0px -2160px;}
+.flag-icon .mu {background-position: 0px -2175px;}
+.flag-icon .mv {background-position: 0px -2190px;}
+.flag-icon .mw {background-position: 0px -2205px;}
+.flag-icon .mx {background-position: 0px -2220px;}
+.flag-icon .my {background-position: 0px -2235px;}
+.flag-icon .mz {background-position: 0px -2250px;}
+.flag-icon .na {background-position: 0px -2265px;}
+.flag-icon .nc {background-position: 0px -2280px;}
+.flag-icon .ne {background-position: 0px -2295px;}
+.flag-icon .nf {background-position: 0px -2310px;}
+.flag-icon .ng {background-position: 0px -2325px;}
+.flag-icon .ni {background-position: 0px -2340px;}
+.flag-icon .nl {background-position: 0px -2355px;}
+.flag-icon .no {background-position: 0px -2370px;}
+.flag-icon .nr {background-position: 0px -2385px;}
+.flag-icon .nu {background-position: 0px -2400px;}
+.flag-icon .nz {background-position: 0px -2415px;}
+.flag-icon .om {background-position: 0px -2430px;}
+.flag-icon .pa {background-position: 0px -2445px;}
+.flag-icon .pe {background-position: 0px -2460px;}
+.flag-icon .pf {background-position: 0px -2475px;}
+.flag-icon .pg {background-position: 0px -2490px;}
+.flag-icon .ph {background-position: 0px -2505px;}
+.flag-icon .pk {background-position: 0px -2520px;}
+.flag-icon .pl {background-position: 0px -2535px;}
+.flag-icon .pm {background-position: 0px -2550px;}
+.flag-icon .pn {background-position: 0px -2565px;}
+.flag-icon .pr {background-position: 0px -2580px;}
+.flag-icon .ps {background-position: 0px -2595px;}
+.flag-icon .pt {background-position: 0px -2610px;}
+.flag-icon .pw {background-position: 0px -2625px;}
+.flag-icon .py {background-position: 0px -2640px;}
+.flag-icon .qa {background-position: 0px -2655px;}
+.flag-icon .ro {background-position: 0px -2670px;}
+.flag-icon .rs {background-position: 0px -2685px;}
+.flag-icon .ru {background-position: 0px -2700px;}
+.flag-icon .rw {background-position: 0px -2715px;}
+.flag-icon .sa {background-position: 0px -2730px;}
+.flag-icon .sb {background-position: 0px -2745px;}
+.flag-icon .sc {background-position: 0px -2760px;}
+.flag-icon .sd {background-position: 0px -2775px;}
+.flag-icon .se {background-position: 0px -2790px;}
+.flag-icon .sh {background-position: 0px -2805px;}
+.flag-icon .si {background-position: 0px -2820px;}
+.flag-icon .sj {background-position: 0px -2835px;}
+.flag-icon .sk {background-position: 0px -2850px;}
+.flag-icon .sl {background-position: 0px -2865px;}
+.flag-icon .sn {background-position: 0px -2880px;}
+.flag-icon .so {background-position: 0px -2895px;}
+.flag-icon .sr {background-position: 0px -2910px;}
+.flag-icon .ss {background-position: 0px -2925px;}
+.flag-icon .st {background-position: 0px -2940px;}
+.flag-icon .sv {background-position: 0px -2955px;}
+.flag-icon .sy {background-position: 0px -2970px;}
+.flag-icon .sz {background-position: 0px -2985px;}
+.flag-icon .tc {background-position: 0px -3000px;}
+.flag-icon .td {background-position: 0px -3015px;}
+.flag-icon .tf {background-position: 0px -3030px;}
+.flag-icon .tg {background-position: 0px -3045px;}
+.flag-icon .th {background-position: 0px -3060px;}
+.flag-icon .tj {background-position: 0px -3075px;}
+.flag-icon .tk {background-position: 0px -3090px;}
+.flag-icon .tl {background-position: 0px -3105px;}
+.flag-icon .tm {background-position: 0px -3120px;}
+.flag-icon .tn {background-position: 0px -3135px;}
+.flag-icon .to {background-position: 0px -3150px;}
+.flag-icon .tr {background-position: 0px -3165px;}
+.flag-icon .tt {background-position: 0px -3180px;}
+.flag-icon .tv {background-position: 0px -3195px;}
+.flag-icon .tz {background-position: 0px -3210px;}
+.flag-icon .ua {background-position: 0px -3225px;}
+.flag-icon .ug {background-position: 0px -3240px;}
+.flag-icon .um {background-position: 0px -3255px;}
+.flag-icon .us {background-position: 0px -3270px;}
+.flag-icon .uy {background-position: 0px -3285px;}
+.flag-icon .uz {background-position: 0px -3300px;}
+.flag-icon .vc {background-position: 0px -3315px;}
+.flag-icon .ve {background-position: 0px -3330px;}
+.flag-icon .vg {background-position: 0px -3345px;}
+.flag-icon .vi {background-position: 0px -3360px;}
+.flag-icon .vn {background-position: 0px -3375px;}
+.flag-icon .vu {background-position: 0px -3390px;}
+.flag-icon .ws {background-position: 0px -3405px;}
+.flag-icon .ye {background-position: 0px -3420px;}
+.flag-icon .za {background-position: 0px -3435px;}
+.flag-icon .zm {background-position: 0px -3450px;}
+.flag-icon .zw {background-position: 0px -3465px;}
+.flag-icon .zz {background-position: 0px -3480px;}
+.flag-icon .bundesliga {background-position: 0px -3495px;}
+.flag-icon .bundesliga-de {background-position: 0px -3510px;}
+.flag-icon .champions-league, .flag-icon .champions-league-zz{background-position: 0px -3525px;}
+.flag-icon .epl {background-position: 0px -3540px;}
+.flag-icon .europa-league-zz {background-position: 0px -3555px;}
+.flag-icon .kbo {background-position: 0px -3570px;}
+.flag-icon .korea-professional-baseball---first-rus-zz {background-position: 0px -3585px;}
+.flag-icon .korea-professional-baseball-kr {background-position: 0px -3600px;}
+.flag-icon .korea-republic---k-league-classic-kr {background-position: 0px -3615px;}
+.flag-icon .la-liga {background-position: 0px -3630px;}
+.flag-icon .la-liga-es {background-position: 0px -3645px;}
+.flag-icon .ligue-1 {background-position: 0px -3660px;}
+.flag-icon .ligue-1-fr {background-position: 0px -3675px;}
+.flag-icon .mlb {background-position: 0px -3690px;}
+.flag-icon .mlb---hits---runs---errors-us, .flag-icon .mlb-hits-runs-errors-us, .flag-icon .hits---runs---errors-us {background-position: 0px -3705px;}
+.flag-icon .mlb---to-score-first-us {background-position: 0px -3720px;}
+.flag-icon .mlb-us {background-position: 0px -3735px;}
+.flag-icon .nba-us {background-position: 0px -3750px;}
+.flag-icon .nba-summer-league-zz {background-position: 0px -3765px;}
+.flag-icon .nba {background-position: 0px -3750px;}
+.flag-icon .nhl {background-position: 0px -3780px;}
+.flag-icon .nippon-professional-baseball-jp {background-position: 0px -3795px;}
+.flag-icon .npb {background-position: 0px -3810px;}
+.flag-icon .npb---hits---runs---errors-us {background-position: 0px -3825px;}
+.flag-icon .npb---hits---runs---errors-zz {background-position: 0px -3840px;}
+.flag-icon .npb---to-score-first-us {background-position: 0px -3855px;}
+.flag-icon .npb---to-score-first-zz {background-position: 0px -3870px;}
+.flag-icon .serie-a {background-position: 0px -3885px;}
+.flag-icon .serie-a-it {background-position: 0px -3900px;}
+.flag-icon .uefa---champions-league-zz {background-position: 0px -3915px;}
+.flag-icon .europa_league_zz, .flag-icon .uefa_-_europa_league_zz, .flag-icon .uefa---europa-league-zz {background-position: 0px -4350px;}
+.flag-icon .bl {background-position: 0px -3945px;}
+.flag-icon .fr {background-position: 0px -3960px;}
+.flag-icon .gf {background-position: 0px -3975px;}
+.flag-icon .gg {background-position: 0px -3990px;}
+.flag-icon .gl {background-position: 0px -4005px;}
+.flag-icon .id {background-position: 0px -4020px;}
+.flag-icon .kr {background-position: 0px -4035px;}
+.flag-icon .mc {background-position: 0px -4050px;}
+.flag-icon .mf {background-position: 0px -4065px;}
+.flag-icon .mq {background-position: 0px -4080px;}
+.flag-icon .re {background-position: 0px -4095px;}
+.flag-icon .sg {background-position: 0px -4110px;}
+.flag-icon .sx {background-position: 0px -4125px;}
+.flag-icon .tw {background-position: 0px -4140px;}
+.flag-icon .wf {background-position: 0px -4155px;}
+.flag-icon .xk {background-position: 0px -4170px;}
+.flag-icon .yt {background-position: 0px -4185px;}
+.flag-icon .ch {background-position: 0px -4200px;}
+.flag-icon .sm {background-position: 0px -4215px;}
+.flag-icon .np {background-position: 0px -4230px;}
+.flag-icon .va {background-position: 0px -4245px;}
+.flag-icon .fifa---world-cup-zz {background-position: 0px -4260px;}
+.flag-icon .england-championship-league {background-position: 0px -4275px;}
+.flag-icon .england-premiere-league {background-position: 0px -4290px;}
+.flag-icon .sf {background-position: 0px -4305px;}
+.flag-icon .serie-a-it {background-position: 0px -4320px;}
+.flag-icon .wales-league {background-position: 0px -4335px;}
+.flag-icon .asian-games {background-position: 0px -4365px;}
+.flag-icon .libertadores-cup {background-position: 0px -4380px;}
+.flag-icon .uefa-nations-league {background-position: 0px -4395px;}
+.flag-icon .uefa-u21{background-position: 0px -4530px;}
+.flag-icon .kovo-cup-volleyball {background-position: 0px -4425px;}
+.flag-icon .nhl-hockey {background-position: 0px -4440px;}
+.flag-icon .afc-champions-league {background-position: 0px -4455px;}
+.flag-icon .uefa-youth-league {background-position: 0px -4470px;}
+.flag-icon .afccup {background-position: 0px -4485px;}
+.flag-icon .eredivise {background-position: 0px -4500px;}
+.flag-icon .jleague {background-position: 0px -4515px;}
+.flag-icon .korea-basketball-league {background-position: 0px -4545px;}
+.flag-icon .korea-volley-ball {background-position: 0px -4560px;}
+.flag-icon .wkbl {background-position: 0px -4575px;}
+.flag-icon .ufc {background-position: 0px -4590px;}

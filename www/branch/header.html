@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <title>Target Material Design Bootstrap Admin Template</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-toggle.min.css" rel="stylesheet">
+	<script src="assets/js/bootstrap-toggle.min.js"></script>
+	
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand waves-effect waves-dark" href="index.html"><i class="large material-icons">track_changes</i> <strong>target</strong></a>
+
+
+        </div>
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown4"><i class="fa fa-envelope fa-fw"></i> 현재접속자 : 3명</a></li>
+            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown4"><i class="fa fa-envelope fa-fw"></i> 금일총베팅금 : 30,000k</a></li>
+            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown4"><i class="fa fa-envelope fa-fw"></i> 입금신청 : 200,000k(1건)</a></li>
+            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown3"><i class="fa fa-tasks fa-fw"></i> 출금신청 : 200,000k(1건)</a></li>
+            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown2"><i class="fa fa-bell fa-fw"></i> 총판문의 : 2건</a></li>
+            <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i class="fa fa-user fa-fw"></i> 시스템 알람 : 2건</a></li>
+        </ul>
+    </nav>
+
+
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li class="active"><!--대분류 active 하시면 상위 메뉴가 펼쳐지게 됩니다.-->
+                    <a class="active-menu waves-effect waves-dark" href="index.html"><i class="fa fa-dashboard"></i> 대쉬보드<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><!--메뉴가 선택된게 하시려면 active 넣으시면 됩니다.-->
+                            <a href="/branch/">대쉬보드</a>
+                        </li>
+                        <li>
+                            <a href="./realtime.html">실시간 베팅 현황 </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="waves-effect waves-dark" href="index.html"><i class="fa fa-dashboard"></i>총판노드 관리<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="./node_list.html">총판 노드 목록</a>
+                        </li>
+                        <li>
+                            <a href="./node_status.html">노드 보유금 현황</a>
+                        </li>
+                        <li>
+                            <a href="./node_approval.html">서비스 승인요청 노드</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ui-elements.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i>입출금 관리<span class="fa arrow"></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="./charge_list.html">보유금 충전 요청 목록</a>
+                        </li>
+                        <li>
+                            <a href="./charge_history.html">보유금 충전 요청 이력</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./member.html" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i> 회원관리</a>
+                </li>
+                <li>
+                    <a href="tab-panel.html" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> 베팅이력<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#">일별 베팅 이력<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="./bet_history_daily.html">일별 베팅 이력</a>
+                                </li>
+                                <li>
+                                    <a href="./bet_history_search.html">베팅 이력 검색</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">베팅 통계<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="./bet_statistics_daily.html">일자별 베팅 통계</a>
+                                </li>
+                                <li>
+                                    <a href="./bet_statistics_monthly.html">월별 베팅 통계</a>
+                                </li>
+                                <li>
+                                    <a href="./game_result.html">게임결과</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+                
+                <li>
+                    <a href="#" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> 베팅이력(service site)<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+						<li><a href="./service_realtime_bet.html">실시간 베팅 현황</a></li>
+						<li><a href="./service_daily_bet.html">일자별 베팅 통계</a></li>
+						<li><a href="./service_game_bet.html">게임별 베팅 통계</a></li>
+						<li><a href="./service_member_bet.html">회원별 베팅 이력</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="table.html" class="waves-effect waves-dark"><i class="fa fa-table"></i> 환경설정<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="./preferences.html">테이블 관리</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i> 관리자<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="./manager_list.html">관리자목록</a>
+                        </li>
+                        <li>
+                            <a href="./ip_setting.html">접속IP설정</a>
+                        </li>
+                        <li>
+                            <a href="./group_setting.html">권한그룹설정</a>
+                        </li>
+                        <li>
+                            <a href="./connection_log.html">접속록그</a>
+                        </li>
+                        <li>
+                            <a href="./activity_log.html">활동로그</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="form.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Forms </a>
+                </li>
+                <li>
+                    <a href="empty.html" class="waves-effect waves-dark"><i class="fa fa-fw fa-file"></i> Empty Page</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->

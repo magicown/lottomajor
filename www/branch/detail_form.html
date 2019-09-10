@@ -1,0 +1,197 @@
+<?php
+	include "./header.html";
+?>
+
+		<div id="page-wrapper">
+		  <?php include "./top_guide.html"; ?>
+            <div id="page-inner">
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="row">
+							<div class="col-md-3">
+								<!--트리 메뉴 -->
+								<iframe src="./tree_menu.html" frameborder="0" marginheight="0" marginwidth="0" height="700" id="the_iframe" onLoad="iframeAutoResize(this);" scrolling="NO" style="width: 100%"></iframe>
+								<!--트리 메뉴 끝-->
+							</div>
+							<div class="col-md-9">
+								<!--상세정보-->
+								<div class="card" style="box-shadow: none;">
+								<div class="card-content">
+									<div class="col">
+										<ul class="tabs">
+											<li class="tab col s3"><a class="active"  href="#test1">기본정보</a></li>
+											<li class="tab col s3"><a href="#test2">회원목록</a></li>
+											<li class="tab col s3"><a href="#test3">베팅이력</a></li>
+											<li class="tab col s3"><a href="#test4">입금이력</a></li>
+											<li class="tab col s3"><a href="#test4">보유금액변동이력</a></li>
+										</ul>
+									</div>
+								</div>
+									<div id="test1" class="col s12">
+
+										<!--회원목록 시작 -->
+											<div class="card-content">
+											<div class="table-responsive">
+												<div class="card">
+
+													<div class="card-content">
+														<form class="col s5">
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">상위 노드 이름</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">현재 노드 이름</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">레벨</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">별칭이름</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">ID</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">비밀번호</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">담당자 이름</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">연락처</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">이메일</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">입금은행</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">계좌번호</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">예금주</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">수수료</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">현재 보유알</span><input type="text" value="lv-01-1"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#takeMoney">보유알 회수</button>
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">API Key</span><input type="text" value="lv-01-1"> <button class="btn btn-primary">생성</button>
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">EndPoint URL</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">서비스 사이트</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">테스트 ID</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">PW</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 10px;">관리자 접속IP</span><input type="text" value="lv-01-1">
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start; flex-direction: column;">
+																<span style="width:150px; height: 40px; margin-top: 10px;">서비스 게임</span>
+																<div style="margin-left:120px;">
+																	<p>
+																		<input type="checkbox" class="filled-in" id="B1">
+																		<label for="B1">바카라</label>
+																	</p>
+																	<p>
+																		<input type="checkbox" class="filled-in" id="B2">
+																		<label for="B2">용호</label>
+																	</p>
+																	<p>
+																		<input type="checkbox" class="filled-in" id="B3">
+																		<label for="B3">롤렛</label>
+																	</p>
+																	<p>
+																		<input type="checkbox" class="filled-in" id="B4">
+																		<label for="B4">슬롯머신</label>
+																	</p>
+																</div>
+															</div>
+															<div class="col-md-12" style="display: flex; justify-content: start">
+																<span style="width:150px; height: 40px; margin-top: 20px;">서비스 차단 여부</span>
+																<div class="switch" style="margin-top:20px;">
+																	<label>
+																		차단안함
+																		<input type="checkbox">
+																		<span class="lever"></span>
+																		차단
+																	</label>
+																</div>
+															</div>
+
+														</form>
+														<div class="clearBoth"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--회원목록 끝-->
+									</div>
+									<div class="clearBoth"><br></div>
+								</div>
+								<!--상세정보 끝-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script language="JavaScript">
+					function iframeAutoResize(h){
+						if(h == null){
+							return false;
+						}
+
+						(h).height = "0px";
+						var iframeHeight= (h).contentWindow.document.body.scrollHeight;
+						(h).height=iframeHeight + 15;
+					}
+				</script>
+<?php include "footer.html"; ?>
+<!--보유알 회수 팝업 모달-->
+
+<div class="modal fade" id="takeMoney" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">보유금 회수 팝업</h4>
+			</div>
+			<div class="modal-body">
+				<div class="card">
+
+					<div class="card-content">
+						<form class="col s5">
+							<div class="col-md-12" style="display: flex; justify-content: start">
+								<span style="width:150px; height: 40px; margin-top: 10px;">현재 보유알</span><input type="text" value="lv-01-1">
+							</div>
+							<div class="col-md-12" style="display: flex; justify-content: start">
+								<span style="width:150px; height: 40px; margin-top: 10px;">수수료</span><input type="text" value="lv-01-1">
+							</div>
+							<div class="col-md-12" style="display: flex; justify-content: start">
+								<span style="width:150px; height: 40px; margin-top: 10px;">회수 알</span><input type="text" value="lv-01-1">
+							</div>
+
+						</form>
+						<div class="clearBoth"></div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+				<button type="button" class="btn btn-primary">알 회수</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--보유알 회수 팝업 모달 끝-->

@@ -1,0 +1,138 @@
+<!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"> -->
+<style>
+.col.s12.node_list_basic_info > div > div.node_list_area{width:100%;}
+.node_list_area ul {padding: 0em;}
+.node_list_area ul li, .node_list_area ul li ul li {position:relative;top:0;bottom:0;padding-bottom: 15px;}
+.node_list_area ul li ul {margin-left: 1.45em;}
+.node_list_area li {list-style-type: none;}
+.node_list_area li a {padding:0 0 0 5px;position: relative;top:0.4em;}
+.node_list_area li a:hover {text-decoration: none;}
+.node_list_area a.addBorderBefore:before {content: "";display: inline-block;width: 2px;height: 28px;position: absolute;left: -27px;top:-20px;border-left: 1px solid gray;}
+.node_list_area li:before {content: "";display: inline-block;width: 10px;height: 1em;position: relative;left: 0em;top:0em;border-bottom: 1px solid gray;}
+.node_list_area ul li:after{margin-top: -20px;position: absolute;}
+.node_list_area ul li ul li:last-child:after, .node_list_area ul li:last-child:after {content: '';display: block;width: 1em;height: 0.3em;position: relative;background: #fff;top: 15px;left: -1px;}
+.container.node_list_area  {margin-right: auto;margin-left: auto;padding-left: 10px;padding-right: 10px;}
+.node_list_area .node_title{width:100%;padding: 10px;text-align: center;background: #f9f9f9}
+.node_list_area button{margin-bottom:-7px;height: 25px;margin-left:5px;}
+</style>
+
+<div class="container node_list_area">
+	<p class="node_title">노드목록</p>
+	<ul>
+		<li><a class="node1" href="#">본사</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+			<ul>
+				<li><a class="node2" href="#">01_LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+					<ul>
+						<li><a class="node3" href="#">01-01 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+							<ul>
+								<li><a class="node4" href="#">01-01 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+								<li><a class="node4" href="#">01-02 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+									<ul>
+										<li><a class="node5" href="#">01-01 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+											<ul>
+												<li><a class="node6" href="#">01-01 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+													<ul>
+														<li><a class="node7" href="#">01-01 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+														<li><a class="node7" href="#">01-02 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+															<ul>
+																<li><a class="node8" href="#">01-01 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+																<li><a class="node8" href="#">01-02 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+																	<ul>
+																		<li><a class="node9" href="#">01-01 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+																		<li><a class="node9" href="#">01-02 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+																			<ul>
+																				<li><a class="node10" href="#">01-01 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+																				<li><a class="node10" href="#">01-02 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+																			</ul>
+																		
+																		</li>
+																	</ul>
+																
+																</li>
+															</ul>
+														
+														</li>
+													</ul>
+												</li>
+												<li><a class="node6" href="#">01-02 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+											</ul>
+										</li>
+										<li><a class="node5" href="#">01-02 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a  class="node3"href="#">01-02 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+					</ul>
+				</li>
+				<li><a class="node2" href="#">02-LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+					<ul>
+						<li><a class="node3" href="#">02-01 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+						<li><a class="node3" href="#">02-02 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+					</ul>
+				</li>
+				<li><a class="node2" href="#">03-LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button>
+					<ul>
+						<li><a class="node3" href="#">03-01 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+						<li><a class="node3" href="#">03-02 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+						<li><a class="node3" href="#">03-03 LV1</a> <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#add_node"> 노드추가 </button></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+	// Select the main list and add the class "hasSubmenu" in each LI that contains an UL
+	$('.node_list_area ul').each(function(){
+		$this = $(this);
+		$this.find("li").has("ul").addClass("hasSubmenu");
+	});
+	// Find the last li in each level
+	$('li:last-child').each(function(){
+		$this = $(this);
+		// Check if LI has children
+		if ($this.children('.node_list_area ul').length === 0){
+			// Add border-left in every UL where the last LI has not children
+			$this.closest('.node_list_area ul').css("border-left", "1px solid gray");
+		} else {
+			// Add border in child LI, except in the last one
+			$this.closest('.node_list_area ul').children("li").not(":last").css("border-left","1px solid gray");
+			// Add the class "addBorderBefore" to create the pseudo-element :defore in the last li
+			$this.closest('.node_list_area ul').children("li").last().children("a").addClass("addBorderBefore");
+			// Add margin in the first level of the list
+			$this.closest('.node_list_area ul').css("margin-top","20px");
+			// Add margin in other levels of the list
+			$this.closest('.node_list_area ul').find("li").children("ul").css("margin-top","15px");
+		};
+	});
+	// Add bold in li and levels above
+	$('.node_list_area ul li').each(function(){
+		$this = $(this);
+		$this.mouseenter(function(){
+			$( this ).children("a").css({"font-weight":"bold"});
+		});
+		$this.mouseleave(function(){
+			$( this ).children("a").css({"font-weight":"normal"});
+		});
+	});
+	// Add button to expand and condense - Using FontAwesome
+	$('.node_list_area ul li.hasSubmenu').each(function(){
+		$this = $(this);
+		$this.prepend("<a href='#'><i class='fa fa-minus-circle'></i><i style='display:none;' class='fa fa-plus-circle'></i></a>");
+		$this.children("a").not(":last").removeClass().addClass("toogle");
+	});
+	// Actions to expand and consense
+	$('.node_list_area ul li.hasSubmenu a.toogle').click(function(){
+		$this = $(this);
+		$this.closest("li").children("ul").toggle("slow");
+		$this.children("i").toggle();
+		return false;
+	});
+</script>
+

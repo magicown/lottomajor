@@ -1,0 +1,969 @@
+<?php
+	include "./header.html";
+?>
+
+		<div id="page-wrapper">
+		  <?php include "./top_guide.html"; ?>
+            <div id="page-inner">
+			<div class="top_search">총판 노드 관리
+	            <div class="custom-control custom-search">
+					<label for="" class="">검색어</label>
+					<input type="text" name="start_date" value="" style="width:100px; text-align: center;"> <button class="btn btn-primary">검색</button>
+				</div>
+            </div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="row">
+							<!-- <div class="col-md-3">
+								트리 메뉴
+								<iframe src="./tree_menu.html" frameborder="0" marginheight="0" marginwidth="0" height="700" id="the_iframe" onLoad="iframeAutoResize(this);" scrolling="NO" style="width: 100%"></iframe>
+								트리 메뉴 끝
+							</div> -->
+							<div class="col-xs-12">
+								<!--상세정보-->
+								<div class="card" style="box-shadow: none;">
+									<div class="card-content">
+										<div class="col tab_area">
+											<ul class="tabs">
+												<li class="tab col s13"><a class="active" href="#test1">기본정보</a></li>
+												<li class="tab col s13"><a href="#test2">회원목록</a></li>
+												<li class="tab col s13"><a href="#test3">베팅이력</a></li>
+												<li class="tab col s13"><a href="#test4">입금이력</a></li>
+												<li class="tab col s13"><a href="#test5">보유금액변동이력</a></li>
+											</ul>
+										</div>
+									</div>
+
+									<div id="test1" class="col s12 node_list_basic_info">
+							<div class="col-xs-3">
+								<!-- 트리 메뉴 -->
+								<?php
+	include "./tree_menu.html";
+?>
+								<!-- <iframe src="./tree_menu.html" frameborder="0" marginheight="0" marginwidth="0" height="700" id="the_iframe" onLoad="iframeAutoResize(this);" scrolling="NO" style="width: 100%"></iframe> -->
+								<!-- 트리 메뉴 끝 -->
+							</div>
+							<div class="col-xs-9">
+										<div class="col s6">
+											<table>
+												<tr>
+													<th>상위 노드 이름</th>
+													<td><input type="text" value="02-LV1"></td>
+												</tr>
+												<tr>
+													<th>현재 노드 이름</th>
+													<td><input type="text" value="02-01 LV2"></td>
+												</tr>
+												<tr>
+													<th>레벨</th>
+													<td><input type="text" value="레벨3"></td>
+												</tr>
+												<tr>
+													<th>별칭이름</th>
+													<td><input type="text" value="필리핀마닐라1"></td>
+												</tr>
+												<tr>
+													<th>ID</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>비밀번호</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>담당자 이름</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>연락처</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>이메일</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>입금은행</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>계좌번호</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>예금주</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>수수료</th>
+													<td><input class="small" type="text" value="20%"></td>
+												</tr>
+												<tr>
+													<th>현재 보유알</th>
+													<td><input class="small" type="text" value="100,000,000">
+													<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reserve_recovery"> 보유알 회수 </button>
+													</td>
+												</tr>
+											</table>
+											<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add_node"> 하위노드추가 </button>
+										</div>
+
+										<div class="col s6">
+											<table>
+												<tr>
+													<th>API Key</th>
+													<td><input class="small" type="text" value="100,000,000">
+													<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add_api"> 생성 </button>
+													</td>
+												</tr>
+												<tr>
+													<th>EndPoint URL</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>서비스 사이트</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>테스트 ID</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>PW</th>
+													<td><input type="text" value=""></td>
+												</tr>
+												<tr>
+													<th>관리자 접속 IP</th>
+													<td><input type="text" value=""></td>
+												</tr>
+											</table>
+											<table>
+												<tr>
+													<th rowspan="4" class="service_title">서비스 게임</th>
+													<td><div class="custom-control custom-checkbox">
+														<input type="checkbox" id="jb-checkbox1" class="custom-control-input">
+														<label class="custom-control-label" for="jb-checkbox1">바카라</label>
+													</div></td>
+												</tr>
+												<tr>
+													<td><div class="custom-control custom-checkbox">
+														<input type="checkbox" id="jb-checkbox2" class="custom-control-input">
+														<label class="custom-control-label" for="jb-checkbox2">용호</label>
+													</div></td>
+												</tr>
+												<tr>
+													<td><div class="custom-control custom-checkbox">
+														<input type="checkbox" id="jb-checkbox3" class="custom-control-input">
+														<label class="custom-control-label" for="jb-checkbox3">룰렛</label>
+													</div></td>
+												</tr>
+												<tr>
+													<td><div class="custom-control custom-checkbox">
+														<input type="checkbox" id="jb-checkbox4" class="custom-control-input">
+														<label class="custom-control-label" for="jb-checkbox4">슬롯머신</label>
+													</div></td>
+												</tr>
+											</table>
+											<table>
+												<tr><th>서비스 차단여부</th><td><input type="checkbox" checked data-toggle="toggle"></td></tr>
+											</table>
+										</div>
+							</div>
+									</div>
+									<div id="test2" class="col s12" style="display: none;">
+										<!--회원목록 시작 -->
+										<div class="card-content">
+											<div class="card search_box">
+												<form>
+													<div class="custom-control custom-search">
+														<label for="">검색어</label>
+														<input type="text" name="start_date" value="" style="width:100px; text-align: center;"> <button class="btn btn-primary">검색</button>
+														<div class="btn-group">
+															<button class="btn btn-primary">전체</button>
+															<button class="btn btn-primary">일반</button>
+															<button class="btn btn-primary">VIP</button>
+															<button class="btn btn-primary">양방의심</button>
+															<button class="btn btn-primary">블랙회원</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered table-hover">
+													<thead>
+													<tr>
+														<th>No</th>
+														<th>노드</th>
+														<th>사이트명</th>
+														<th>파트너코드</th>
+														<th>아이디</th>
+														<th>등급</th>
+														<th>마지막보유머니</th>
+														<th>마지막로그인날짜</th>
+														<th>접속IP</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<td>1</td>
+														<td>본사-총판1-대리점</td>
+														<td>위너</td>
+														<td>3</td>
+														<td>user#5</td>
+														<td>일반</td>
+														<td>100,000</td>
+														<td>2019-03-20 12:00</td>
+														<td>1.2.3.4</td>
+													</tr>
+
+													</tbody>
+													</td>
+														<tr style="background-color: #0a857e">
+															<th style="color:#fff;" class="center">합계</th>
+															<th style="color:#fff;" colspan="8" class="center">100,000</th>
+														</tr>
+													</tfoot>
+												</table>
+											</div>
+										</div>
+										<!--회원목록 끝-->
+									</div>
+									<div id="test3" class="col s12" style="display: none;">
+										<div class="row">
+											<div class="card-content">
+												<div class="col tab_area_second">
+													<ul class="tabs">
+														<li class="tab col s3"><a class="active" href="#test3_1">회원 베팅이력</a></li>
+														<li class="tab col s3"><a href="#test3_2">일별 베팅이력</a></li>
+														<li class="tab col s3"><a href="#test3_3">게임별 베팅이력</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										
+										<!--회원베팅이력 시작 -->
+										<div id="test3_1" class="card-content">
+											<div class="card search_box">
+												<form>
+													<div class="custom-control custom-radio">
+														<input type="radio" name="jb-radio" id="jb-radio-1" class="custom-control-input">
+														<label class="custom-control-label" for="jb-radio-1">전체</label>
+														<input type="radio" name="jb-radio" id="jb-radio-2" class="custom-control-input">
+														<label class="custom-control-label" for="jb-radio-2">바카라</label>
+														<input type="radio" name="jb-radio" id="jb-radio-3" class="custom-control-input">
+														<label class="custom-control-label" for="jb-radio-3">용호</label>
+														<input type="radio" name="jb-radio" id="jb-radio-4" class="custom-control-input">
+														<label class="custom-control-label" for="jb-radio-4">룰렛</label>
+													</div>
+													<div class="custom-control custom-search">
+														<input type="text" name="start_date" value="2019-08-28" style="width:100px; text-align: center;"> ~ <input type="text" name="start_date" value="2019-08-28" style="width: 100px;text-align: center;"><button class="btn btn-primary">검색</button>
+														<div class="btn-group">
+															<button class="btn btn-primary">오늘</button>
+															<button class="btn btn-primary">일주일</button>
+															<button class="btn btn-primary">한달</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered table-hover">
+													<thead>
+													<tr>
+														<th>No</th>
+														<th>일시</th>
+														<th>파트너코드</th>
+														<th>아이디</th>
+														<th>게임ID</th>
+														<th>게임종류</th>
+														<th>테이블</th>
+														<th>슈박스</th>
+														<th>회차</th>
+														<th>베팅한곳</th>
+														<th>베팅금</th>
+														<th>배당률</th>
+														<th>경기결과</th>
+														<th>적중여부</th>
+														<th>회원수익</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<td>1</td>
+														<td>190234 12:12</td>
+														<td>3</td>
+														<td>user#1</td>
+														<td>654</td>
+														<td>바카라</td>
+														<td>3</td>
+														<td>6</td>
+														<td>33</td>
+														<td>뱅크</td>
+														<td>10,000</td>
+														<td>1.96</td>
+														<td>플레이어</td>
+														<td>실패</td>
+														<td>-10,000</td>
+													</tr>
+													</tbody>
+													<tfoot>
+													<tr style="background-color: #0a857e">
+														<th style="color:#fff;" class="center">합계</th>
+														<th style="color:#fff;" colspan="14" class="center">100,000</th>
+													</tr>
+													</tfoot>
+												</table>
+											</div>
+										</div>
+										<!--회원베팅이력 끝-->
+										<!--일별베팅이력 시작 -->
+										<div id="test3_2" class="card-content" style="display: none;">
+											<div class="card search_box">
+												<form>
+													<div class="custom-control custom-radio">
+														<input type="radio" name="jb-radio" id="jb-radio-1" class="custom-control-input">
+														<label class="custom-control-label" for="jb-radio-1">전체</label>
+														<input type="radio" name="jb-radio" id="jb-radio-2" class="custom-control-input">
+														<label class="custom-control-label" for="jb-radio-2">스피드바카라</label>
+														<input type="radio" name="jb-radio" id="jb-radio-3" class="custom-control-input">
+														<label class="custom-control-label" for="jb-radio-3">뉴뉴</label>
+														<input type="radio" name="jb-radio" id="jb-radio-4" class="custom-control-input">
+														<label class="custom-control-label" for="jb-radio-4">룰렛</label>
+													</div>
+													<div class="custom-control custom-search">
+														<input type="text" name="start_date" value="2019-08-28" style="width:100px; text-align: center;"> ~ <input type="text" name="start_date" value="2019-08-28" style="width: 100px;text-align: center;"><button class="btn btn-primary">검색</button>
+														<div class="btn-group">
+															<button class="btn btn-primary">오늘</button>
+															<button class="btn btn-primary">일주일</button>
+															<button class="btn btn-primary">한달</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered table-hover table-statistics">
+													<thead>
+													<tr>
+														<th>No</th>
+														<th>날짜</th>
+														<th>노드</th>
+														<th>게임종류</th>
+														<th>베팅금</th>
+														<th>적중</th>
+														<th>회사수익</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<td rowspan="3">1</td>
+														<td rowspan="3">2019-01-29</td>
+														<td rowspan="3">02-01 LV2</td>
+														<td>바카라</td>
+														<td>20,000,000</td>
+														<td>15,000,000</td>
+														<td>5,000,000</td>
+													</tr>
+													<tr>
+														<td>용호</td>
+														<td>10,000,000</td>
+														<td>5,000 000</td>
+														<td>5,000,000</td>
+													</tr>
+													<tr>
+														<td>룰렛</td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr class="sub_total">
+														<td colspan="4">소계</td>
+														<td>10,000,000</td>
+														<td>5,000 000</td>
+														<td>5,000,000</td>
+													</tr>
+													<tr>
+														<td rowspan="3">1</td>
+														<td rowspan="3">2019-01-29</td>
+														<td rowspan="3">02-01 LV2</td>
+														<td>바카라</td>
+														<td>20,000,000</td>
+														<td>15,000,000</td>
+														<td>5,000,000</td>
+													</tr>
+													<tr>
+														<td>용호</td>
+														<td>10,000,000</td>
+														<td>5,000 000</td>
+														<td>5,000,000</td>
+													</tr>
+													<tr>
+														<td>룰렛</td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr class="sub_total">
+														<td colspan="4">소계</td>
+														<td>10,000,000</td>
+														<td>5,000 000</td>
+														<td>5,000,000</td>
+													</tr>
+													</tbody>
+													<tfoot>
+													<tr style="background-color: #0a857e">
+														<th style="color:#fff;" colspan="4" class="center">합계</th>
+														<th style="color:#fff;" class="center">100,000</th>
+														<th style="color:#fff;" class="center">100,000</th>
+														<th style="color:#fff;" class="center">100,000</th>
+													</tr>
+													</tfoot>
+												</table>
+											</div>
+										</div>
+										<!--일별베팅이력 끝-->
+										<!--게임별베팅이력 시작 -->
+										<div id="test3_3" class="card-content" style="display: none;">
+											<div class="card search_box">
+												<form>
+													<div class="custom-control custom-radio">
+														2019-07-01 ~ 2019-07-20
+													</div>
+													<div class="custom-control custom-search">
+														<input type="text" name="start_date" value="2019-08-28" style="width:100px; text-align: center;"> ~ <input type="text" name="start_date" value="2019-08-28" style="width: 100px;text-align: center;"><button class="btn btn-primary">검색</button>
+														<div class="btn-group">
+															<button class="btn btn-primary">오늘</button>
+															<button class="btn btn-primary">일주일</button>
+															<button class="btn btn-primary">한달</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered table-hover">
+													<thead>
+													<tr>
+														<th>게임종류</th>
+														<th>베팅금</th>
+														<th>적중</th>
+														<th>회원수익</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<td>바카라</td>
+														<td>20,000,000</td>
+														<td>15,000,000</td>
+														<td>5,000,000</td>
+													</tr>
+													<tr>
+														<td>용호</td>
+														<td>20,000,000</td>
+														<td>15,000,000</td>
+														<td>5,000,000</td>
+													</tr>
+													<tr>
+														<td>룰렛</td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													</tbody>
+													<tfoot>
+													<tr style="background-color: #0a857e">
+														<th style="color:#fff;" class="center">합계</th>
+														<th style="color:#fff;" class="center">100,000</th>
+														<th style="color:#fff;" class="center">100,000</th>
+														<th style="color:#fff;" class="center">100,000</th>
+													</tr>
+													</tfoot>
+												</table>
+											</div>
+										</div>
+										<!--게임별베팅이력 끝-->
+									</div>
+									<div id="test4" class="col s12" style="display: none;">
+										<!--입금이력 시작 -->
+										<div class="card-content">
+											<div class="card search_box">
+												<form>
+													<div class="custom-control custom-search">
+														<input type="text" name="start_date" value="2019-08-28" style="width:100px; text-align: center;"> ~ <input type="text" name="start_date" value="2019-08-28" style="width: 100px;text-align: center;"><button class="btn btn-primary">검색</button>
+														<div class="btn-group">
+															<button class="btn btn-primary">오늘</button>
+															<button class="btn btn-primary">일주일</button>
+															<button class="btn btn-primary">한달</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered table-hover">
+													<thead>
+													<tr>
+														<th>No</th>
+														<th>신청일</th>
+														<th>입금자</th>
+														<th>입금액</th>
+														<th>요청내용</th>
+														<th>취소 사유</th>
+														<th>처리</th>
+														<th>수수료</th>
+														<th>충전 보유금</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<td>1</td>
+														<td>2019-03-20</td>
+														<td>홍길동</td>
+														<td>100,000</td>
+														<td></td>
+														<td></td>
+														<td>대기</td>
+														<td>10%</td>
+														<td>-</td>
+													</tr>
+													</tbody>
+													<tfoot>
+													<tr style="background-color: #0a857e">
+														<th style="color:#fff;" colspan="3" class="center">합계</th>
+														<th style="color:#fff;" class="center">100,000</th>
+														<th style="color:#fff;" colspan="4"></th>
+														<th style="color:#fff;" class="center">100,000</th>
+													</tr>
+													</tfoot>
+												</table>
+											</div>
+										</div>
+										<!--입금이력 끝-->
+									</div>
+									<div id="test5" class="col s12" style="display: none;">
+										<!--보유금변동이력 시작 -->
+										<div class="card-content">
+											<div class="card search_box">
+												<form>
+													<div class="custom-control custom-search">
+														<input type="text" name="start_date" value="2019-08-28" style="width:100px; text-align: center;"> ~ <input type="text" name="start_date" value="2019-08-28" style="width: 100px;text-align: center;"><button class="btn btn-primary">검색</button>
+														<div class="btn-group">
+															<button class="btn btn-primary">오늘</button>
+															<button class="btn btn-primary">일주일</button>
+															<button class="btn btn-primary">한달</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered table-hover">
+													<thead>
+													<tr>
+														<th rowspan="2">No</th>
+														<th rowspan="2">일시</th>
+														<th colspan="4">입금 이력</th>
+														<th colspan="4">판매 알 이력</th>
+														<th rowspan="2">누적알</th>
+													</tr>
+													<tr>
+														<th>상위노드</th>
+														<th>수수료</th>
+														<th>입금액</th>
+														<th>구입 알</th>
+														<th>하위노드</th>
+														<th>수수료</th>
+														<th>금액</th>
+														<th>판매 알</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<td>1</td>
+														<td>2019-01-29 14:00:02</td>
+														<td>00총판</td>
+														<td>10%</td>
+														<td>200,000</td>
+														<td>2,000,000</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td>2,000,000</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>2019-01-29 14:00:02</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td>00총판</td>
+														<td>10%</td>
+														<td>200,000</td>
+														<td>2,000,000</td>
+														<td>2,000,000</td>
+													</tr>
+													</tbody>
+													<tfoot>
+													<tr style="background-color: #0a857e">
+														<th style="color:#fff;" colspan="2" class="center">합계</th>
+														<th style="color:#fff;" colspan="2" class="center"></th>
+														<th style="color:#fff;" class="center">100,000</th>
+														<th style="color:#fff;" class="center">100,000</th>
+														<th style="color:#fff;" colspan="2" class="center"></th>
+														<th style="color:#fff;" class="center">100,000</th>
+														<th style="color:#fff;" class="center">100,000</th>
+														<th style="color:#fff;" class="center">100,000</th>
+													</tr>
+													</tfoot>
+												</table>
+											</div>
+										</div>
+										<!--보유금변동이력 끝-->
+									</div>
+									<div class="clearBoth"><br></div>
+								</div>
+								<!--상세정보 끝-->
+							</div>
+						</div>
+					</div>
+				</div>
+<!-- 보유알 회수 팝업 -->
+<div class="modal modal-center fade" id="reserve_recovery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">보유알 회수</h4>
+      </div>
+      <div class="modal-body">
+		<table>
+			<tr>
+				<th colspan="2">하위총판 : 00-00총판(LV3)</th>
+			</tr>
+			<tr>
+				<th>현재 보유알</th>
+				<td><input type="text" value="100,000"></td>
+			</tr>
+			<tr>
+				<th>수수료</th>
+				<td><input type="text" value="20%"></td>
+			</tr>
+			<tr>
+				<th>회수할 알</th>
+				<td><input type="text" value="100,000"></td>
+			</tr>
+		</table>      	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-default">알 회수</button>
+      </div>
+    </div>
+</div></div>
+				
+<!-- 생성 팝업 -->
+<div class="modal modal-center fade" id="add_api" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">생성</h4>
+      </div>
+      <div class="modal-body">
+		생성버튼 누르면 팝업이 뜨나요?     	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+</div></div>
+				
+<!-- 하위노드추가 팝업 -->
+<div class="modal modal-center fade" id="add_node" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">하위 노드 추가</h4>
+      </div>
+      <div class="modal-body">
+		<div class="col s12 node_list_basic_info">
+			<div class="col s6">
+				<h6>총판 노드 속성</h6>
+				<table>
+					<tr>
+						<th>상위 노드 이름</th>
+						<td><input type="text" value="02-LV1"></td>
+					</tr>
+					<tr>
+						<th>현재 노드 이름</th>
+						<td><input type="text" value="02-01 LV2"></td>
+					</tr>
+					<tr>
+						<th>레벨</th>
+						<td><input type="text" value="레벨3"></td>
+					</tr>
+					<tr>
+						<th>별칭이름</th>
+						<td><input type="text" value="필리핀마닐라1"></td>
+					</tr>
+					<tr>
+						<th>ID</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>담당자 이름</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>연락처</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>입금은행</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>계좌번호</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>예금주</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>수수료</th>
+						<td><input class="small" type="text" value="20%">
+						<span>현재 수수료 : 10%</span>
+						</td>
+					</tr>
+				</table>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#"> 생성 </button>
+			</div>
+
+			<div class="col s6">
+				<h6>서비스 노드 속성</h6>
+				<table>
+					<tr>
+						<th>API Key</th>
+						<td><input class="small" type="text" value="100,000,000">
+						<button type="button" class="btn btn-primary center" data-toggle="modal" data-target="#"> Key 생성 </button>
+						</td>
+					</tr>
+					<tr>
+						<th>EndPoint URL</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>서비스 사이트</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>테스트 ID</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>PW</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>관리자 접속 IP</th>
+						<td><input type="text" value=""></td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<th rowspan="4" class="service_title">서비스 게임</th>
+						<td><div class="custom-control custom-checkbox">
+							<input type="checkbox" id="jb-checkbox1" class="custom-control-input">
+							<label class="custom-control-label" for="jb-checkbox1">바카라</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td><div class="custom-control custom-checkbox">
+							<input type="checkbox" id="jb-checkbox2" class="custom-control-input">
+							<label class="custom-control-label" for="jb-checkbox2">용호</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td><div class="custom-control custom-checkbox">
+							<input type="checkbox" id="jb-checkbox3" class="custom-control-input">
+							<label class="custom-control-label" for="jb-checkbox3">룰렛</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td><div class="custom-control custom-checkbox">
+							<input type="checkbox" id="jb-checkbox4" class="custom-control-input">
+							<label class="custom-control-label" for="jb-checkbox4">슬롯머신</label>
+						</div></td>
+					</tr>
+				</table>
+				<table>
+					<tr><th>서비스 차단여부</th><td><input type="checkbox" checked data-toggle="toggle"></td></tr>
+				</table>
+				<button type="button" class="btn btn-primary center" data-toggle="modal" data-target="#"> 저장 </button>
+			</div>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+</div></div>
+<!-- 노드목록 하위노드추가 팝업 -->
+<div class="modal modal-center fade" id="sub_add_node" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">하위 노드 추가</h4>
+      </div>
+      <div class="modal-body">
+		<div class="col s12 node_list_basic_info">
+			<div class="col s6">
+				<h6>총판 노드 속성</h6>
+				<table>
+					<tr>
+						<th>상위 노드 이름</th>
+						<td><input type="text" value="02-LV1"></td>
+					</tr>
+					<tr>
+						<th>현재 노드 이름</th>
+						<td><input type="text" value="02-01 LV2"></td>
+					</tr>
+					<tr>
+						<th>레벨</th>
+						<td><input type="text" value="레벨3"></td>
+					</tr>
+					<tr>
+						<th>별칭이름</th>
+						<td><input type="text" value="필리핀마닐라1"></td>
+					</tr>
+					<tr>
+						<th>ID</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>담당자 이름</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>연락처</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>입금은행</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>계좌번호</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>예금주</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>수수료</th>
+						<td><input class="small" type="text" value="20%">
+						<span>현재 수수료 : 10%</span>
+						</td>
+					</tr>
+				</table>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#"> 생성 </button>
+			</div>
+
+			<div class="col s6">
+				<h6>서비스 노드 속성</h6>
+				<table>
+					<tr>
+						<th>API Key</th>
+						<td><input class="small" type="text" value="100,000,000">
+						<button type="button" class="btn btn-primary center" data-toggle="modal" data-target="#"> Key 생성 </button>
+						</td>
+					</tr>
+					<tr>
+						<th>EndPoint URL</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>서비스 사이트</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>테스트 ID</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>PW</th>
+						<td><input type="text" value=""></td>
+					</tr>
+					<tr>
+						<th>관리자 접속 IP</th>
+						<td><input type="text" value=""></td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<th rowspan="4" class="service_title">서비스 게임</th>
+						<td><div class="custom-control custom-checkbox">
+							<input type="checkbox" id="jb-checkbox1" class="custom-control-input">
+							<label class="custom-control-label" for="jb-checkbox1">바카라</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td><div class="custom-control custom-checkbox">
+							<input type="checkbox" id="jb-checkbox2" class="custom-control-input">
+							<label class="custom-control-label" for="jb-checkbox2">용호</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td><div class="custom-control custom-checkbox">
+							<input type="checkbox" id="jb-checkbox3" class="custom-control-input">
+							<label class="custom-control-label" for="jb-checkbox3">룰렛</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td><div class="custom-control custom-checkbox">
+							<input type="checkbox" id="jb-checkbox4" class="custom-control-input">
+							<label class="custom-control-label" for="jb-checkbox4">슬롯머신</label>
+						</div></td>
+					</tr>
+				</table>
+				<table>
+					<tr><th>서비스 차단여부</th><td><input type="checkbox" checked data-toggle="toggle"></td></tr>
+				</table>
+				<button type="button" class="btn btn-primary center" data-toggle="modal" data-target="#"> 저장 </button>
+			</div>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+</div></div>				
+				<script language="JavaScript">
+					function iframeAutoResize(h){
+						if(h == null){
+							return false;
+						}
+
+						(h).height = "0px";
+						var iframeHeight= (h).contentWindow.document.body.scrollHeight;
+						(h).height=iframeHeight + 15;
+					}
+				</script>
+<?php include "footer.html"; ?>

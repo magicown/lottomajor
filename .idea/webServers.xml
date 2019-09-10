@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="431db671-5cda-4a7a-808a-91c7489dd742" name="lottomajor" url="http://lottomajor.co.kr">
+        <fileTransfer host="lottomajor.co.kr" port="22" rootFolder="/home/lottomajor" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

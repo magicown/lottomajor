@@ -1,0 +1,92 @@
+<?php
+	include "./header.html";
+?>
+<div id="page-wrapper">
+<?php include "./top_guide.html"; ?>
+	<div id="page-inner">
+    	<div class="top_search">회원 목록</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="card" style="box-shadow: none;">
+					<div class="col s12">
+						<div class="contents">
+							<div class="card search_box">
+								<form>
+									<div class="custom-control custom-select select_150">
+										<span>사이트</span>
+										<div class="select_150">
+											<select class="form-control">
+											<option>위너</option>
+											<option>위너</option>
+											<option>위너</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom-control custom-search">
+										<label for="" class="">검색어</label>
+										<input type="text" name="start_date" value="" style="width:100px; text-align: center;"> <button class="btn btn-primary">검색</button>
+									</div>
+								</form>
+							</div>
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-hover">
+									<thead>
+									<tr>
+										<th>No</th>
+										<th>노드</th>
+										<th>사이트명</th>
+										<th>파트너코드</th>
+										<th>아이디</th>
+										<th>등급</th>
+										<th>총베팅액</th>
+										<th>마지막로그인날짜</th>
+										<th>접속IP</th>
+										<th>접속 차단</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>1</td>
+										<td>본사-총판1-대리점</td>
+										<td>위너</td>
+										<td>3</td>
+										<td><a href="./member_info.html">user#1</a></td>
+										<td>
+											<select class="form-control">
+											<option>일반</option>
+											<option>테스트</option>
+											<option>양방의심</option>
+											</select>
+										</td>
+										<td>20,000,000</td>
+										<td>2019-03-20 21:00</td>
+										<td>0.0.0.0</td>
+										<td><input type="checkbox" checked data-toggle="toggle"></td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>본사-총판1-대리점</td>
+										<td>위너</td>
+										<td>3</td>
+										<td><a href="./member_info.html">user#1</a></td>
+										<td>
+											<select class="form-control">
+											<option>일반</option>
+											<option>테스트</option>
+											<option>양방의심</option>
+											</select>
+										</td>
+										<td>20,000,000</td>
+										<td>2019-03-20 21:00</td>
+										<td>0.0.0.0</td>
+										<td><input type="checkbox" checked data-toggle="toggle"></td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="clearBoth"><br></div>
+				</div>
+			</div>
+<?php include "footer.html"; ?>
